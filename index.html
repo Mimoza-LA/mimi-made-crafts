@@ -1,21 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mimi-Made Crafts</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #fafafa;
+            background: #fafafa;
             color: #333;
         }
 
         header {
-            background-color: #f8c8dc;
-            padding: 20px;
+            background: #f5c7c7;
+            padding: 1rem;
             text-align: center;
         }
 
@@ -27,106 +27,114 @@
         .products {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-            padding: 20px;
+            gap: 1.5rem;
+            padding: 2rem;
         }
 
         .card {
-            background: white;
+            background: #fff;
             border-radius: 12px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-            padding: 15px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            padding: 1rem;
             text-align: center;
         }
 
             .card img {
-                max-width: 100%;
+                width: 100%;
+                max-height: 200px;
+                object-fit: cover;
                 border-radius: 8px;
             }
 
             .card h2 {
-                margin: 10px 0 5px;
-                font-size: 1.25rem;
+                margin: 0.5rem 0;
             }
 
-            .card p {
-                margin: 5px 0;
+        .price {
+            margin: 0.5rem 0;
+            font-style: italic;
+            color: #666;
+        }
+
+        .contact-btn {
+            display: inline-block;
+            margin-top: 0.5rem;
+            padding: 0.5rem 1rem;
+            background: #f5c7c7;
+            color: #333;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+        }
+
+            .contact-btn:hover {
+                background: #f28a8a;
+                color: white;
             }
 
         footer {
-            background: #eee;
             text-align: center;
-            padding: 10px;
-            margin-top: 20px;
-        }
-
-        .contact {
-            margin-top: 10px;
-            font-weight: bold;
-            color: #cc3366;
+            padding: 1rem;
+            background: #f5c7c7;
+            margin-top: 2rem;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Welcome to Mimi-Made Crafts</h1>
-        <p>Handmade crochet & sourdough creations, made with love ðŸ’•</p>
+        <h1>Handmade by Mimi</h1>
+        <p>Beautiful crafts & bakery, made with love</p>
     </header>
 
-    <main>
-        <div class="products">
-            <!-- Crochet Blanket -->
-            <div class="card">
-                <img src="https://via.placeholder.com/300x200?text=Crochet+Blanket" alt="Crochet Blanket">
-                <h2>Crochet Blankets</h2>
-                <p>Soft, cozy, and handmade for your comfort.</p>
-                <p class="contact">Contact me for price</p>
-            </div>
-
-            <!-- Beanie Hat -->
-            <div class="card">
-                <img src="https://via.placeholder.com/300x200?text=Crochet+Beanie" alt="Crochet Beanie">
-                <h2>Crochet Beanie Hats</h2>
-                <p>Stylish beanies to keep you warm in style.</p>
-                <p class="contact">Contact me for price</p>
-            </div>
-
-            <!-- Dog Bandana Crochet -->
-            <div class="card">
-                <img src="https://via.placeholder.com/300x200?text=Crochet+Dog+Bandana" alt="Dog Bandana Crochet">
-                <h2>Dog Bandanas (Crochet)</h2>
-                <p>Handmade crochet bandanas for your pets.</p>
-                <p class="contact">Contact me for price</p>
-            </div>
-
-            <!-- Dog Bandana Embroidered -->
-            <div class="card">
-                <img src="https://via.placeholder.com/300x200?text=Embroidered+Dog+Bandana" alt="Dog Bandana Embroidered">
-                <h2>Dog Bandanas (Embroidered)</h2>
-                <p>Personalized with your dog's name embroidered.</p>
-                <p class="contact">Contact me for price</p>
-            </div>
-
-            <!-- Sourdough Bread -->
-            <div class="card">
-                <img src="https://via.placeholder.com/300x200?text=Sourdough+Bread" alt="Sourdough Bread">
-                <h2>Sourdough Bread</h2>
-                <p>Freshly baked, naturally leavened sourdough loaves.</p>
-                <p class="contact">Contact me for price</p>
-            </div>
-
-            <!-- Croissants -->
-            <div class="card">
-                <img src="https://via.placeholder.com/300x200?text=Croissants" alt="Croissants">
-                <h2>Handmade Croissants</h2>
-                <p>Flaky, buttery croissants made from scratch.</p>
-                <p class="contact">Contact me for price</p>
-            </div>
+    <section class="products">
+        <!-- Crochet Blanket -->
+        <div class="card">
+            <img src="https://via.placeholder.com/300x200?text=Crochet+Blanket" alt="Crochet Blanket">
+            <h2>Crochet Blanket</h2>
+            <p>Soft, cozy handmade crochet blankets perfect for snuggling.</p>
+            <p class="price">Contact me for price</p>
+            <a class="contact-btn" href="mailto:mimi-made.com">Contact Me</a>
         </div>
-    </main>
+
+        <!-- Beanie Hat -->
+        <div class="card">
+            <img src="https://via.placeholder.com/300x200?text=Crochet+Beanie+Hat" alt="Crochet Beanie Hat">
+            <h2>Crochet Beanie Hat</h2>
+            <p>Warm and stylish beanies, crafted in different colors.</p>
+            <p class="price">Contact me for price</p>
+            <a class="contact-btn" href="mailto:mimi-made.com">Contact Me</a>
+        </div>
+
+        <!-- Dog Bandana -->
+        <div class="card">
+            <img src="https://via.placeholder.com/300x200?text=Dog+Bandana" alt="Crochet Dog Bandana">
+            <h2>Crochet Dog Bandana</h2>
+            <p>Custom handmade dog bandanas — add your pet’s name!</p>
+            <p class="price">Contact me for price</p>
+            <a class="contact-btn" href="mailto:mimi-made.com">Contact Me</a>
+        </div>
+
+        <!-- Sourdough Bread -->
+        <div class="card">
+            <img src="https://via.placeholder.com/300x200?text=Sourdough+Bread" alt="Sourdough Bread">
+            <h2>Sourdough Bread</h2>
+            <p>Fresh, homemade sourdough bread, baked with natural ingredients.</p>
+            <p class="price">Contact me for price</p>
+            <a class="contact-btn" href="mailto:mimi-made.com">Contact Me</a>
+        </div>
+
+        <!-- Croissants -->
+        <div class="card">
+            <img src="https://via.placeholder.com/300x200?text=Croissants" alt="Croissants">
+            <h2>Handmade Croissants</h2>
+            <p>Flaky, buttery croissants with a homemade touch.</p>
+            <p class="price">Contact me for price</p>
+            <a class="contact-btn" href="mailto:mimi-made.com">Contact Me</a>
+        </div>
+    </section>
 
     <footer>
-        <p>&copy; 2025 Mimi-Made Crafts | Handmade with love</p>
+        <p>&copy; 2025 Handmade by Mimi. All rights reserved.</p>
     </footer>
 </body>
 </html>
